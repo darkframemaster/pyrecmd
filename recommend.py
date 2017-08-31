@@ -63,7 +63,7 @@ def get_recommendations(prefs, obj, similarity = sim_pearson):
     sim_sums = dict()
 
     for other in prefs:
-        if other != obj
+        if other != obj:
             sim = similarity(prefs, obj, other)
         else:
             continue
